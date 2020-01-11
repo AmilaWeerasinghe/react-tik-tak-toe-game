@@ -70,3 +70,18 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 Showing the Past Moves
 
 Use map to show step and move
+
+Picking a Key
+
+When we render a list, React stores some information about each rendered list item. 
+
+we need to specify a key property for each list item to differentiate each list item from its sibling
+
+Keys tell React about the identity of each component which allows React to maintain state between re-renders. If a component’s key changes, the component will be destroyed and re-created with a new state.
+
+key cannot be referenced using this.props.key
+
+assign proper keys whenever you build dynamic lists.
+
+Keys do not need to be globally unique; they only need to be unique between components and their siblings.
+
